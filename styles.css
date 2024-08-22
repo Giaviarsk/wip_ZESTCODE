@@ -1,0 +1,61 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.block {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.workspace {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+}
+
+/* styles.css */
+
+.workspace .block {
+    padding: 5px;
+    width: 150px; /* Adjust width as needed */
+    font-size: 12px; /* Smaller font size */
+    margin-bottom: 5px;
+}
+
+
+/* styles.css */
+.block input {
+    width: 90%; /* Adjust width to fit inside the block */
+    padding: 2px;
+    margin-top: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+/* styles.css */
+h1, h2, h3, h4, p {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}

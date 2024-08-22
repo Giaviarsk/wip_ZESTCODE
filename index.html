@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block-Based Coding Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" ondrop="dropBack(event)" ondragover="allowDrop(event)">
+            <div class="block print-block" draggable="true" id="printBlock">
+                Print: <input type="text" placeholder="Enter text" class="printInput">
+            </div>
+            <div class="block text-style-block" draggable="true" id="textStyleBlock">
+                Text Style: 
+                <select class="style-select">
+                    <option value="h1">Header 1</option>
+                    <option value="h2">Header 2</option>
+                    <option value="p">Paragraph</option>
+                    <option value="h3">Header 3</option>
+                    <option value="h4">Header 4</option>
+                </select>
+            </div>
+            <div class="block other-block" draggable="true" id="otherBlock">Other Block</div>
+        </div>
+        <div class="workspace" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+    </div>
+    <button onclick="runPrintBlock()">Run</button>
+    <script src="script.js"></script>
+</body>
+</html>
